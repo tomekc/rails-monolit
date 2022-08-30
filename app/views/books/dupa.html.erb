@@ -1,0 +1,11 @@
+<div>dupa</div>
+
+<p>Pytanie: <b><%= @pytanie %></b></p>
+
+<div>
+<%= dupa_books_path() %>
+<%= form_tag(dupa_books_path(), :method => "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %></div>
